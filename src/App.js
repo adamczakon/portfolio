@@ -1,13 +1,16 @@
-import React, { Component } from 'react';
-import Navbar from "./components/Navbar";
-import './styles/styles.scss';
-
+import React, { Component } from "react";
+import Home from "./components/Home";
+import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
+import "./style/main.scss";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar />
+        <Home />
+        <Portfolio />
+        <Footer />
       </div>
     );
   }

@@ -1,0 +1,13 @@
+.menu-btn {
+  position: fixed;
+  top: 28px;
+  right: 40px;
+  z-index: 3;
+
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background-color: $secondary-color;
+  }
+}

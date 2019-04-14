@@ -1,0 +1,72 @@
+@include mediaXl {
+  .menu-btn {
+    display: none;
+  }
+
+  .project {
+    grid-template-columns: 40% 50%;
+  }
+}
+
+@include mediaLg {
+  .navbar {
+    display: none;
+  }
+
+  .project {
+    grid-template-rows: auto auto;
+    grid-row-gap: 20px;
+
+    &-description {
+      text-align: center;
+    }
+  }
+
+  .banner {
+    a {
+      font-size: 1rem;
+      padding: 5px;
+    }
+  }
+}
+
+@include mediaMd {
+  .banner {
+    a {
+      display: none;
+    }
+  }
+
+  .navbar {
+    display: none;
+  }
+  .project {
+    grid-template-rows: auto auto;
+    grid-row-gap: 20px;
+
+    &-description {
+      text-align: center;
+    }
+  }
+}
+
+@include mediaSm {
+  h1,
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .introduction {
+    margin-bottom: 30px;
+    display: block;
+  }
+  .banner {
+    a {
+      display: none;
+    }
+
+    .navbar {
+      display: none;
+    }
+  }
+}

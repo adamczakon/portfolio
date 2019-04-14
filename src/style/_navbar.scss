@@ -1,0 +1,67 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+
+  a {
+    color: white;
+  }
+
+  .btn-active {
+    border-bottom: 1px solid white;
+  }
+
+  &.fixed {
+    @include slideDown;
+    color: $primary-color;
+    background-color: #fff;
+    position: fixed;
+    box-shadow: 0 2px 2px -3px gray;
+
+    .title {
+      color: $primary-color;
+      flex: 5;
+      margin-left: 10%;
+      padding-left: 40px;
+      @include slideDown;
+    }
+
+    .btn-active {
+      color: $primary-color;
+    }
+    .btn-inactive {
+      color: $secondary-color;
+    }
+  }
+
+  .title {
+    color: #fff;
+    flex: 5;
+    margin-left: 10%;
+    padding-left: 40px;
+  }
+
+  .list {
+    flex: end;
+    margin-right: 10%;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin: 0 40px;
+      display: inline;
+
+      &:hover {
+        @include easeOut;
+        cursor: pointer;
+        color: $secondary-color;
+      }
+    }
+  }
+}
