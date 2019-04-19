@@ -33,7 +33,7 @@ export default class AppNavbar extends Component {
     this.state.scroll > 700 ? (className += " fixed") : (className = "navbar");
     return (
       <React.Fragment>
-        <SideMenu show={this.state.menuOpen} />
+        <SideMenu show={this.state.menuOpen} toggle={this.toggle} />
         <div className={className}>
           <div className="title">
             <h2>Adam Czakon</h2>

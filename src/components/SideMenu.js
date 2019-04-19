@@ -1,17 +1,20 @@
-import React from "react";
+import React, { Component } from "react";
 
-const SideMenu = props => {
-  let menuClasses = "side-menu";
-  if (props.show) {
-    menuClasses = "side-menu open";
+export default class SideMenu extends Component {
+  render() {
+    let menuClasses = "side-menu";
+    if (this.props.show) {
+      menuClasses = "side-menu open";
+    }
+    return (
+      <div className={menuClasses}>
+        <a href="#projects" onClick={this.props.toggle}>
+          Projects
+        </a>
+        <a href="#contact" onClick={this.props.toggle}>
+          Contact
+        </a>
+      </div>
+    );
   }
-  return (
-    <div className={menuClasses}>
-      <a href="#home">Home</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  );
-};
-
-export default SideMenu;
+}

@@ -4,10 +4,6 @@
 @import "menu-button";
 @import "mobile";
 
-.item {
-  margin: 10px 0;
-}
-
 .App {
   .home {
     background: url("../imgs/background.jpeg");
@@ -16,6 +12,7 @@
     height: 75vh;
     &-introduction {
       text-align: center;
+      margin-top: 2.5%;
     }
   }
 
@@ -36,9 +33,9 @@
 
       a {
         margin-top: 25px;
-        padding: 20px;
+
         color: #fff;
-        font-size: 2rem;
+
         border: 1px solid #fff;
         border-radius: 5px;
 
@@ -54,16 +51,20 @@
   }
 }
 .container {
-  margin: 0 15%;
+  margin: 0 15% 5% 15%;
 }
+
 .project {
   height: 40%;
   width: 100%;
   display: grid;
   grid-column-gap: 5%;
   padding: 15% 2.5%;
-
   border-bottom: 1px solid $secondary-color;
+
+  &.first {
+    padding-top: 5%;
+  }
 
   &-description {
     a {
@@ -94,15 +95,11 @@
       border-radius: 5px;
     }
   }
-
-  &.last {
-    margin-bottom: 0;
-  }
 }
 
 .contact {
   width: 100%;
-  padding: 5vh 15%;
+  padding: 0 15% 5% 15%;
 }
 
 footer {

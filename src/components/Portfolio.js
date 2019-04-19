@@ -10,9 +10,9 @@ export default function Portfolio() {
       <div className="container">
         <div className="project">
           <div className="project-description">
-            <h1 className="item">Lyric search app</h1>
+            <h1 className="item">Lyrics app</h1>
             <p className="secondary item">
-              Web application that can be used for finding lyrics.
+              Web application that can be used for finding songs lyrics.
             </p>
             <p>
               <span className="primary bold">Technologies: </span> React, Redux,
@@ -26,7 +26,7 @@ export default function Portfolio() {
         </div>
         <div className="project">
           <div className="project-description">
-            <h1 className="item">Lyric search app</h1>
+            <h1 className="item">Exam schedule app</h1>
             <p className="secondary item">
               Web application for scheduling exams, tests, homeworks.
             </p>
@@ -45,10 +45,9 @@ export default function Portfolio() {
         </div>
         <div className="project last">
           <div className="project-description">
-            <h1 className="item">Lyric search app</h1>
+            <h1 className="item">App for learning english</h1>
             <p className="secondary item">
-              Web application for learning english by completing interactive
-              excersises.
+              Web application with interactive excersises for learning english.
             </p>
             <p>
               <span className="primary bold">Technologies: </span>HTML/CSS,
