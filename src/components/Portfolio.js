@@ -18,7 +18,13 @@ export default function Portfolio() {
               <span className="primary bold">Technologies: </span> React, Redux,
               Bootstrap
             </p>
-            <a href="https://github.com/adamczakon/Lyrics-App-React">GITHUB</a>
+            <a
+              href="https://github.com/adamczakon/Lyrics-App-React"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GITHUB
+            </a>
           </div>
           <div className="project-image">
             <img src={Lyrics_app} alt="Loading..." />
@@ -35,7 +41,11 @@ export default function Portfolio() {
               <span className="primary bold">Technologies: </span>React, Redux,
               Bootstrap/Reactstrap
             </p>
-            <a href="https://github.com/adamczakon/Exam-Schedule-React">
+            <a
+              href="https://github.com/adamczakon/Exam-Schedule-React"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               GITHUB
             </a>
           </div>
@@ -53,7 +63,7 @@ export default function Portfolio() {
               <span className="primary bold">Technologies: </span>HTML/CSS,
               JavaScript
             </p>
-            <a>UNAVAIBLE</a>
+            <p className="unavaible">UNAVAIBLE</p>
           </div>
           <div className="project-image">
             <img src={English_app} alt="Loading..." />

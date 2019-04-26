@@ -3,8 +3,8 @@ import AppNavbar from "./AppNavbar";
 
 export default function Home() {
   return (
-    <div style={{ height: "100vh" }}>
-      <div className="home" id="home">
+    <div className="home" id="home">
+      <div className="home-background">
         <div className="overlay">
           <AppNavbar />
           <div className="banner">
@@ -16,7 +16,7 @@ export default function Home() {
         <div className="home-introduction">
           <h1>My Portfolio</h1>
           <p>
-            Below you can see my projects. I am still working on some of them.{" "}
+            Below you can see my projects. I'm still working on some of them.{" "}
             <br /> I've listed technologies that I used to create each project.
           </p>
         </div>

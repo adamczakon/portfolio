@@ -1,0 +1,49 @@
+.project {
+  height: 40%;
+  width: 100%;
+  display: grid;
+  grid-column-gap: 5%;
+  padding: 15% 2.5%;
+  border-bottom: 1px solid $secondary-color;
+
+  &.first {
+    padding-top: 5%;
+  }
+
+  &-description {
+    a {
+      display: inline-block;
+      padding: 10px;
+      border: 2px solid $primary-color;
+      border-radius: 5px;
+      color: $primary-color;
+
+      &:hover {
+        @include easeOut;
+        background: $primary-color;
+        color: #fff;
+      }
+    }
+
+    .unavaible {
+      display: inline-block;
+      padding: 10px;
+      border: 2px solid $secondary-color;
+      border-radius: 5px;
+    }
+  }
+
+  &-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: auto;
+      box-shadow: 3px 3px 4px #ccc;
+      border: 0.5px solid #ccc;
+      border-radius: 5px;
+    }
+  }
+}

@@ -7,7 +7,8 @@ export default class AppNavbar extends Component {
     super(props);
 
     this.state = {
-      menuOpen: false
+      menuOpen: false,
+      scroll: 0
     };
 
     this.handleScroll = this.handleScroll.bind(this);

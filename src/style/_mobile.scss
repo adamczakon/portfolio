@@ -38,6 +38,10 @@
 }
 
 @include mediaMd {
+  .navbar {
+    display: none;
+  }
+
   .banner {
     a {
       font-size: 1.5rem;
@@ -45,9 +49,6 @@
     }
   }
 
-  .navbar {
-    display: none;
-  }
   .project {
     grid-template-rows: auto auto;
     grid-row-gap: 20px;
@@ -59,16 +60,6 @@
 }
 
 @include mediaSm {
-  h1,
-  h2 {
-    font-size: 1.2rem;
-  }
-
-  .introduction {
-    margin-bottom: 30px;
-    display: block;
-  }
-
   .navbar {
     display: none;
   }
@@ -78,5 +69,21 @@
       font-size: 1.2rem;
       padding: 10px;
     }
+  }
+
+  .home {
+    &-introduction {
+      padding: 0.5rem;
+    }
+  }
+
+  h1,
+  h2 {
+    font-size: 1rem;
+  }
+
+  h3,
+  p {
+    font-size: 0.8rem;
   }
 }
