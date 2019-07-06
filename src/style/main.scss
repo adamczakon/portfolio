@@ -1,9 +1,10 @@
 @import "config";
-@import "navbar";
-@import "home";
-@import "projects";
+@import "Navbar";
+@import "Home";
+@import "Projects";
 @import "side-menu";
 @import "menu-button";
+@import "Footer";
 @import "mobile";
 
 .container {
@@ -12,13 +13,4 @@
 
 .contact {
   padding: 0 15% 5% 15%;
-}
-
-footer {
-  height: 100px;
-  background: $secondary-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
 }

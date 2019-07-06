@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import MenuButton from "./MenuButton";
 import SideMenu from "./SideMenu";
-
+import acLogo from "../imgs/acLogo.png";
 export default class AppNavbar extends Component {
   constructor(props) {
     super(props);
@@ -16,12 +16,16 @@ export default class AppNavbar extends Component {
   }
 
   handleScroll() {
-    this.setState({ scroll: window.scrollY });
+    this.setState({
+      scroll: window.scrollY
+    });
   }
 
   toggle() {
     this.setState(prevState => {
-      return { menuOpen: !prevState.menuOpen };
+      return {
+        menuOpen: !prevState.menuOpen
+      };
     });
   }
 
@@ -36,45 +40,41 @@ export default class AppNavbar extends Component {
       <React.Fragment>
         <SideMenu show={this.state.menuOpen} toggle={this.toggle} />
         <div className={className}>
-          <div className="title">
-            <h2>Adam Czakon</h2>
-          </div>
-          <div className="list">
-            <ul>
-              <li>
-                <a
-                  href="#home"
-                  className={
-                    this.state.scroll < 5 ? "btn-active" : "btn-inactive"
-                  }
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#projects"
-                  className={
-                    this.state.scroll > 700 && this.state.scroll < 2000
-                      ? "btn-active"
-                      : "btn-inactive"
-                  }
-                >
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className={
-                    this.state.scroll > 2000 ? "btn-active" : "btn-inactive"
-                  }
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
+          <h2 className="navbar__title"> A C </h2>
+          <ul className="navbar__list">
+            <li>
+              <a
+                href="#home"
+                className={
+                  this.state.scroll < 5 ? "button active" : "button inactive"
+                }
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                className={
+                  this.state.scroll > 700 && this.state.scroll < 2000
+                    ? "button active"
+                    : "button inactive"
+                }
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className={
+                  this.state.scroll > 2000 ? "button active" : "button inactive"
+                }
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
         </div>
         <MenuButton toggle={this.toggle} />
       </React.Fragment>

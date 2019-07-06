@@ -7,12 +7,42 @@
   justify-content: center;
   text-transform: uppercase;
 
-  a {
-    color: white;
+  &__title {
+    color: #fff;
+    flex: 5;
+    margin-left: 10%;
+    padding-left: 40px;
+    font-style: italic;
   }
 
-  .btn-active {
-    border-bottom: 1px solid white;
+  &__list {
+    list-style: none;
+    flex: end;
+    margin: 0 10% 0 0;
+
+    li {
+      display: inline;
+      margin: 0 15px;
+
+      .button {
+        padding: 0 25px 25.5px 25px;
+
+        &.active {
+          color: #fff;
+          border-bottom: 2px solid white;
+        }
+
+        &.inactive {
+          color: #fff;
+        }
+      }
+
+      &:hover {
+        @include easeOut;
+        cursor: pointer;
+        color: $secondary-color;
+      }
+    }
   }
 
   &.fixed {
@@ -22,7 +52,7 @@
     position: fixed;
     box-shadow: 0 2px 2px -3px gray;
 
-    .title {
+    .navbar__title {
       color: $primary-color;
       flex: 5;
       margin-left: 10%;
@@ -30,38 +60,41 @@
       @include slideDown;
     }
 
-    .btn-active {
-      color: $primary-color;
-    }
-    .btn-inactive {
-      color: $secondary-color;
-    }
-  }
+    .button {
+      padding: 0 30px 25.5px 30px;
 
-  .title {
-    color: #fff;
-    flex: 5;
-    margin-left: 10%;
-    padding-left: 40px;
-  }
+      &.active {
+        color: $primary-color;
+        border-bottom: 2px solid $primary-color;
+      }
 
-  .list {
-    flex: end;
-    margin-right: 10%;
-  }
-
-  ul {
-    list-style: none;
-
-    li {
-      margin: 0 40px;
-      display: inline;
-
-      &:hover {
-        @include easeOut;
-        cursor: pointer;
+      &.inactive {
         color: $secondary-color;
       }
     }
+  }
+}
+
+@include mediaXl {
+  .menu-btn {
+    display: none;
+  }
+}
+
+@include mediaLg {
+  .navbar {
+    display: none;
+  }
+}
+
+@include mediaMd {
+  .navbar {
+    display: none;
+  }
+}
+
+@include mediaSm {
+  .navbar {
+    display: none;
   }
 }
