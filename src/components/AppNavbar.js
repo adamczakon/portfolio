@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import MenuButton from "./MenuButton";
 import SideMenu from "./SideMenu";
-import acLogo from "../imgs/acLogo.png";
 export default class AppNavbar extends Component {
   constructor(props) {
     super(props);
@@ -40,11 +39,11 @@ export default class AppNavbar extends Component {
       <React.Fragment>
         <SideMenu show={this.state.menuOpen} toggle={this.toggle} />
         <div className={className}>
-          <h2 className="navbar__title"> A C </h2>
-          <ul className="navbar__list">
+          <h2 className='navbar__title'> A C </h2>
+          <ul className='navbar__list'>
             <li>
               <a
-                href="#home"
+                href='#home'
                 className={
                   this.state.scroll < 5 ? "button active" : "button inactive"
                 }
@@ -54,7 +53,7 @@ export default class AppNavbar extends Component {
             </li>
             <li>
               <a
-                href="#projects"
+                href='#projects'
                 className={
                   this.state.scroll > 700 && this.state.scroll < 2000
                     ? "button active"
@@ -66,7 +65,7 @@ export default class AppNavbar extends Component {
             </li>
             <li>
               <a
-                href="#contact"
+                href='#contact'
                 className={
                   this.state.scroll > 2000 ? "button active" : "button inactive"
                 }

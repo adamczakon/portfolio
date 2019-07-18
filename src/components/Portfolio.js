@@ -1,76 +1,147 @@
 import React from "react";
-import Schedule_app from "../imgs/exam_schedule.png";
-import English_app from "../imgs/english_app.png";
-import Lyrics_app from "../imgs/lyrics_app.png";
+import itcloud from "../imgs/itcloud.png";
+import spaceverse from "../imgs/spaceverse.png";
+import formovie from "../imgs/formovie.png";
 import Contact from "./Contact";
 
 export default function Portfolio() {
   return (
-    <div id="projects">
-      <div className="container">
-        <div className="project">
-          <div className="project-description">
-            <h1 className="item">Lyrics app</h1>
-            <p className="secondary item">
-              Web application that can be used for finding songs lyrics.
-            </p>
-            <p>
-              <span className="primary bold">Technologies: </span> React, Redux,
-              Bootstrap
-            </p>
-            <a
-              href="https://github.com/adamczakon/Lyrics-App-React"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GITHUB
-            </a>
+    <div id='projects'>
+      <div className='container'>
+        <div className='project'>
+          <div className='project-description'>
+            <h1 className='item'>IT Cloud</h1>
+            <p className='secondary item'>Social website for developers.</p>
+            <h4 className='description-header'>Technologies</h4>
+            <div className='description-grid'>
+              <div>
+                <h4 className='technologies-header'>Front</h4>
+                <ul className='project-technologies'>
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>SCSS</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className='technologies-header'>Back</h4>
+                <ul className='project-technologies'>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>MongoDB</li>
+                </ul>
+              </div>
+            </div>
+            <div className='description-grid'>
+              <a
+                className='btn btn-github'
+                href='https://github.com/adamczakon/IT-Cloud'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Github
+              </a>
+              <a
+                className='btn btn-live'
+                href='https://fast-shore-92170.herokuapp.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Live
+              </a>
+            </div>
           </div>
-          <div className="project-image">
-            <img src={Lyrics_app} alt="Loading..." />
+          <div className='project-image'>
+            <img src={itcloud} alt='Loading...' />
           </div>
         </div>
-        <div className="project">
-          <div className="project-description">
-            <h1 className="item">Exam schedule app</h1>
-            <p className="secondary item">
-              Web application for scheduling exams, tests, homeworks.
+        <div className='project'>
+          <div className='project-description'>
+            <h1 className='item'>Spaceverse</h1>
+            <p className='secondary item'>
+              Application for managing space flights.
             </p>
-            <p>
-              {" "}
-              <span className="primary bold">Technologies: </span>React, Redux,
-              Bootstrap/Reactstrap
-            </p>
-            <a
-              href="https://github.com/adamczakon/Exam-Schedule-React"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GITHUB
-            </a>
+            <h4 className='description-header'>Technologies</h4>
+            <div className='description-grid'>
+              <div>
+                <h4 className='technologies-header'>Front</h4>
+                <ul className='project-technologies'>
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>SCSS</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className='technologies-header'>Back</h4>
+                <ul className='project-technologies'>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>MongoDB</li>
+                </ul>
+              </div>
+            </div>
+            <div className='description-grid'>
+              <a
+                className='btn btn-github'
+                href='https://github.com/adamczakon/IT-Cloud'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Github
+              </a>
+              <a
+                className='btn btn-live'
+                href='https://fast-shore-92170.herokuapp.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Live
+              </a>
+            </div>
           </div>
-          <div className="project-image">
-            <img src={Schedule_app} alt="Loading..." />
+          <div className='project-image'>
+            <img src={spaceverse} alt='Loading...' />
           </div>
         </div>
-        <div className="project last">
-          <div className="project-description">
-            <h1 className="item">App for learning english</h1>
-            <p className="secondary item">
-              Web application with interactive excersises for learning english.
-            </p>
-            <p>
-              <span className="primary bold">Technologies: </span>HTML/CSS,
-              JavaScript
-            </p>
-            <p className="unavaible">UNAVAIBLE</p>
+        <div className='project last'>
+          <div className='project-description'>
+            <h1 className='item'>ForMovie</h1>
+            <p className='secondary item'>Website for browsing movies.</p>
+            <h4 className='description-header'>Technologies</h4>
+            <div className='description-grid'>
+              <div>
+                <h4 className='technologies-header'>Front</h4>
+                <ul className='project-technologies'>
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>SCSS</li>
+                </ul>
+              </div>
+            </div>
+            <div className='description-grid'>
+              <a
+                className='btn btn-github'
+                href='https://github.com/adamczakon/IT-Cloud'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Github
+              </a>
+              <a
+                className='btn btn-live'
+                href='https://fast-shore-92170.herokuapp.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Live
+              </a>
+            </div>
           </div>
-          <div className="project-image">
-            <img src={English_app} alt="Loading..." />
+          <div className='project-image'>
+            <img src={formovie} alt='Loading...' />
           </div>
         </div>
       </div>
-      <div id="contact">
+      <div id='contact'>
         <Contact />
       </div>
     </div>

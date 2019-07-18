@@ -4,8 +4,8 @@
   &__background {
     background: linear-gradient(rgba(192, 23, 34, 0.5), rgba(192, 23, 34, 0.5)),
       url("../imgs/background.jpg");
-    background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     height: 75vh;
 
     .home__header {
