@@ -39,7 +39,7 @@ export default class AppNavbar extends Component {
       <React.Fragment>
         <SideMenu show={this.state.menuOpen} toggle={this.toggle} />
         <div className={className}>
-          <h2 className='navbar__title'> A C </h2>
+          <h2 className='navbar__title'> Adam Czakon </h2>
           <ul className='navbar__list'>
             <li>
               <a

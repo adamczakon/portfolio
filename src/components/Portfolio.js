@@ -82,7 +82,7 @@ export default function Portfolio() {
             <div className='description-grid'>
               <a
                 className='btn btn-github'
-                href='https://github.com/adamczakon/IT-Cloud'
+                href='https://github.com/adamczakon/spaceverse.git'
                 target='_blank'
                 rel='noopener noreferrer'
               >
@@ -90,7 +90,7 @@ export default function Portfolio() {
               </a>
               <a
                 className='btn btn-live'
-                href='https://fast-shore-92170.herokuapp.com/'
+                href='https://still-brushlands-54388.herokuapp.com/'
                 target='_blank'
                 rel='noopener noreferrer'
               >

@@ -20,6 +20,13 @@
     display: none;
   }
 
+  .banner {
+    a {
+      padding: 20px;
+      font-size: 4rem;
+    }
+  }
+
   .project {
     grid-template-rows: auto auto;
     grid-row-gap: 20px;
@@ -29,13 +36,6 @@
       .secondary-item {
         text-align: center;
       }
-    }
-  }
-
-  .banner {
-    a {
-      font-size: 1.5rem;
-      padding: 10px;
     }
   }
 }
@@ -73,6 +73,10 @@
 @include mediaSm {
   .container {
     margin: 0 5% 5% 5%;
+  }
+
+  .introduction__text {
+    padding: 0 5%;
   }
 
   .navbar {
