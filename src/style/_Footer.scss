@@ -1,17 +1,43 @@
 .footer {
-    height: 200px;
-    background: #1e1e1e;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+  background: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  color: #fff;
 
-    &__author {
+  .info__wrapper {
+    width: 100%;
+
+    .footer__info {
+      font-size: 1.2rem;
+      margin: 0;
+      width: 100%;
+    }
+
+    .footer__margin {
+      margin-bottom: 0.8rem;
+    }
+
+    .footer__github {
+      display: flex;
+      align-items: center;
+
+      .footer_link {
+        color: #fff;
+        padding: 0.5rem 0 0 1rem;
         font-size: 1.2rem;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
     }
 
-    &__icon {
-        height: 40px;
+    .footer__icon {
+      padding-top: 1rem;
+      height: 40px;
     }
+  }
 }

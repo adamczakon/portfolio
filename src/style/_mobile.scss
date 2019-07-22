@@ -42,7 +42,7 @@
 
 @include mediaMd {
   .container {
-    margin: 0 3% 3% 5%;
+    margin: 0 5%;
   }
 
   .navbar {
@@ -68,11 +68,23 @@
       }
     }
   }
+
+  .footer {
+    padding: 10% 5%;
+    text-align: center;
+
+    .info-wrapper {
+      .footer__info {
+        font-size: 0.8rem;
+        text-align: center;
+      }
+    }
+  }
 }
 
 @include mediaSm {
   .container {
-    margin: 0 5% 5% 5%;
+    margin: 0 5%;
   }
 
   .navbar {
@@ -106,5 +118,35 @@
   h3,
   p {
     font-size: 0.9rem;
+  }
+
+  .about {
+    width: 96%;
+    padding: 10% 2%;
+
+    &__item {
+      font-size: 0.9rem;
+    }
+  }
+
+  .footer {
+    padding: 10% 5%;
+    text-align: center;
+
+    .info__wrapper {
+      .footer__info {
+        font-size: 0.9rem;
+      }
+
+      .footer__margin {
+        margin-bottom: 1rem;
+      }
+
+      .footer__github {
+        .footer_link {
+          font-size: 0.9rem;
+        }
+      }
+    }
   }
 }

@@ -1,18 +1,17 @@
 .side-menu {
   height: 100vh;
-  width: 100%;
-  background: $primary-color;
+  width: 60%;
+  padding-top: 20%;
+  background: linear-gradient($primary-color, #000 80%);
   position: fixed;
   top: 0;
-  left: 0;
-  opacity: 0.9;
-  z-index: 1;
+  right: 0;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  transform: translateX(-100%);
+  font-size: 1.2rem;
+  transform: translateX(100%);
   @include easeOut;
 
   &.open {
@@ -20,7 +19,7 @@
   }
 
   a {
-    padding: 40px;
+    padding: 20px;
     color: white;
   }
 }

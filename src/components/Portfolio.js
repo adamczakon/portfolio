@@ -1,5 +1,6 @@
 import React from "react";
 import itcloud from "../imgs/itcloud.png";
+import mediadevs from "../imgs/mediadevs.png";
 import spaceverse from "../imgs/spaceverse.png";
 import formovie from "../imgs/formovie.png";
 import Contact from "./Contact";
@@ -52,6 +53,43 @@ export default function Portfolio() {
           </div>
           <div className='project-image'>
             <img src={itcloud} alt='Loading...' />
+          </div>
+        </div>
+        <div className='project last'>
+          <div className='project-description'>
+            <h1 className='item'>Media Devs</h1>
+            <p className='secondary item'>Landing page for business website.</p>
+            <h4 className='description-header'>Technologies</h4>
+            <div className='description-grid'>
+              <div>
+                <h4 className='technologies-header'>Front</h4>
+                <ul className='project-technologies'>
+                  <li>React</li>
+                  <li className='text-center'>React Styled Components</li>
+                </ul>
+              </div>
+            </div>
+            <div className='description-grid'>
+              <a
+                className='btn btn-github'
+                href='https://adamczakon.github.io/media-devs/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Github
+              </a>
+              <a
+                className='btn btn-live'
+                href='https://github.com/adamczakon/media-devs'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Live
+              </a>
+            </div>
+          </div>
+          <div className='project-image'>
+            <img src={mediadevs} alt='Loading...' />
           </div>
         </div>
         <div className='project'>
@@ -141,7 +179,7 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-      <div id='contact'>
+      <div id='about'>
         <Contact />
       </div>
     </div>
