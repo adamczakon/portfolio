@@ -27,7 +27,7 @@
         padding: 20px;
 
         &:hover {
-          @include easeOut;
+          @include easeIn;
           cursor: pointer;
           background: #fff;
           color: $primary-color;

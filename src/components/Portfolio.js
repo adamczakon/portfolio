@@ -72,7 +72,7 @@ export default function Portfolio() {
             <div className='description-grid'>
               <a
                 className='btn btn-github'
-                href='https://adamczakon.github.io/media-devs/'
+                href='https://github.com/adamczakon/media-devs'
                 target='_blank'
                 rel='noopener noreferrer'
               >
@@ -80,7 +80,7 @@ export default function Portfolio() {
               </a>
               <a
                 className='btn btn-live'
-                href='https://github.com/adamczakon/media-devs'
+                href='https://adamczakon.github.io/media-devs/'
                 target='_blank'
                 rel='noopener noreferrer'
               >

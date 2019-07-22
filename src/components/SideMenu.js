@@ -8,11 +8,11 @@ export default class SideMenu extends Component {
     }
     return (
       <div className={menuClasses}>
-        <a href="#projects" onClick={this.props.toggle}>
+        <a href='#projects' onClick={this.props.toggle}>
           Projects
         </a>
-        <a href="#contact" onClick={this.props.toggle}>
-          Contact
+        <a href='#about' onClick={this.props.toggle}>
+          About
         </a>
       </div>
     );

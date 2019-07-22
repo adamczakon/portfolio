@@ -36,10 +36,13 @@ a {
   font-weight: bold;
 }
 
+@mixin easeIn {
+  transition: all 0.3s ease-in;
+}
+
 @mixin easeOut {
   transition: all 0.3s ease-out;
 }
-
 //media mixins
 
 @mixin mediaSm {
